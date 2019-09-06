@@ -9,10 +9,11 @@ This project was developed on the platform node that allows the development of b
 **0:** Install the basics dependencies
 - [Node.js](https://nodejs.org)
 
+
 **1:** Clone the project and install the dependencies:
 ```bash
-$ git clone https://github.com/ccarvofficial/react-tictactoe.git
-$ cd tictoctoe
+$ git clone https://github.com/ccarvofficial/nodejscourseproject-codehousebookstore.git
+$ cd codehouse
 $ npm install
 ```
 
@@ -22,8 +23,13 @@ $ npm start
 ```
 Go to: localhost:3000
 
+
 ## Stack
-- [React](https://reactjs.org/)
+- [Node.js](https://reactjs.org/)
+- [Express](https://markojs.com/docs/express/)
+- [Marko](https://markojs.com/)
+- [sqlite](https://www.sqlite.org/index.html)
+- [nodemon](https://nodemon.io/)
 
 
 
@@ -32,36 +38,46 @@ Go to: localhost:3000
 ```bash
 .
 ├── out/
-├── public/
-|   ├── ccarv-logotype.png
-|   ├── favicon.ico
-|   ├── index.html
-|   ├── logo192.png
-|   ├── logo512.png
-|   ├── manifest.json
-|   ├── robots.txt
 ├── src/
-|   ├── index.css
-|   ├── index.js
+|   ├── app/
+|   |   ├── infra/
+|   |   |   ├── book-dao.js
+|   |   ├── public/
+|   |   |   ├── images/
+|   |   |   |   ├── ccarv-logotype.png
+|   |   |   |   ├── certificate.png
+|   |   |   ├── js/
+|   |   |   |   ├── remove-book.js
+|   |   ├── routes/
+|   |   |   ├── routes.js
+|   |   ├── views/
+|   |   |   ├── books/
+|   |   |   |   ├── form/
+|   |   |   |   |   ├── form.marko
+|   |   |   |   |   ├── form.marko.js
+|   |   |   |   ├── list/
+|   |   |   |   |   ├── list.marko
+|   |   |   |   |   ├── list.marko.js
+|   ├── config/
+|   |   ├── custom-express.js
+|   |   ├── database.js
 ├── .gitignore
+├── data.db
+├── package-lock.json
+├── package.json
 ├── package.json
 ├── README.md
-└── yarn.lock
+└── server.js
 ```
 
-## Automatic Tasks
-- ``` $ npm start ```  Runs the app in the development mode.
-- ``` $ npm test ```  Launches the test runner in the interactive watch mode.
-- ``` $ npm run build ```  Builds the app for production to the `build` folder.
-- ``` $ npm run eject ```  If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Certificate
+![Certificate](https://github.com/ccarvofficial/nodejscourseproject-codehousebookstore/blob/master/src/app/public/images/certificate.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-All documentation [here](https://reactjs.org/docs/getting-started.html).
+All documentation [here](https://nodejs.org/en/docs/).
 
 ---
 ---
-![Claudio Carvalho Logotype](https://github.com/ccarvofficial/react-tictactoe/blob/master/public/ccarv-logotype.png)<br>
+![Claudio Carvalho Logotype](https://github.com/ccarvofficial/nodejscourseproject-codehousebookstore/blob/master/src/app/public/images/ccarv-logotype.png)<br>
 **@ccarv**official<br>
 [Personal Portfolio](http://claudiocarvalho.dev)
 
