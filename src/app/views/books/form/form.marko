@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <h1>Book Registration</h1>
+
+        <form action="/books" method="post">
+
+            <div if(data.book.id)>
+                <input type="hidden" name="_method" value="PUT">
+                <input type="hidden" id="id" name="id" value="${data.book.id}"/>
+            </div>
+
+            <div>
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" value="${data.book.title}" placeholder="insert a title" />
+            </div>
+            <div>
+                <label for="price">Price:</label>
+                <input type="text" id="price" name="price"  value="${data.book.price}" placeholder="150.25" />
+            </div>
+            <div>
+                <label for="description">Description:</label>
+                <textarea cols="20" rows="10"  id="description" name="description" placeholder="speak about the book">${data.book.description}</textarea>
+            </div>
+
+            <input type="submit" value="Add" />
+        </form>
+    </body>
+</html>
